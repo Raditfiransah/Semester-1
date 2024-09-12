@@ -1,3 +1,4 @@
+package Joobsheet.Praktikum;
 import java.util.Scanner;
 
 public class Minggu3 {

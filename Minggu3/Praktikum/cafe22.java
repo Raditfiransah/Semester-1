@@ -1,3 +1,4 @@
+package Joobsheet.Praktikum;
 import java.util.Scanner;
 
 
@@ -8,7 +9,7 @@ public class cafe22 {
 
         boolean keanggotaan;
         int jumlahKopi, jumlahTeh, jumlahRoti;
-        double hargaKopi = 5000, hargaTeh = 4000, hargaRoti = 3000, totalHarga, nominalBayar;
+        float hargaKopi = 12000, hargaTeh = 7000, hargaRoti = 20000, totalHarga, nominalBayar;
         float diskon = 10 / 100f;
 
         System.out.println("Masukkan Keanggotaan: ");
@@ -25,7 +26,7 @@ public class cafe22 {
 
         totalHarga = (jumlahKopi * hargaKopi) + (jumlahTeh * hargaTeh) + (hargaRoti + hargaRoti);
 
-        nominalBayar = totalHarga - (diskon + totalHarga);
+        nominalBayar = totalHarga - (diskon * totalHarga);
 
         System.out.println("Keanggotaan Pelanggan: "+ keanggotaan);
         System.out.println("Item Pembelian: "+ jumlahKopi+ " Kopi "+ jumlahTeh + " Teh " + jumlahRoti + "Roti");
