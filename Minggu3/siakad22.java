@@ -26,8 +26,10 @@ public class siakad22 {
 
         nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian) /3;
 
-        System.out.println("Nama: "+ nama + " NIM: "+ nim);
-        System.out.println("Kelas: "+ kelas + " Absen: "+ absen);
+        System.out.println("Nama: "+ nama);
+        System.out.println("NIM: "+ nim);
+        System.out.println("Kelas: "+ kelas);
+        System.out.println("Absen: "+ absen);
         System.out.println("Nilai Akhir: "+ nilaiAkhir);
 
         
