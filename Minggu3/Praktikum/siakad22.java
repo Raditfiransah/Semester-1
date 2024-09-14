@@ -1,4 +1,4 @@
-package Joobsheet.Praktikum;
+package Praktikum;
 import java.util.Scanner;
 
 public class siakad22 {
@@ -8,8 +8,8 @@ public class siakad22 {
         String nama, nim;
         char kelas;
         byte absen;
-        double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
-
+        double nilaiKuis, nilaiTugas, uas, uts, nilaiAkhir;
+        
         System.out.println("Masukkan Nama:");
         nama = scanner.nextLine();
         System.out.println("Masukkan NIM:");
@@ -22,17 +22,19 @@ public class siakad22 {
         nilaiKuis = scanner.nextDouble();
         System.out.println("Masukkan Nilai Tugas:");
         nilaiTugas = scanner.nextDouble();
-        System.out.println("Masukkan Nilai ujian:");
-        nilaiUjian = scanner.nextDouble();
+        System.out.println("Masukkan Nilai UTS:");
+        uts = scanner.nextDouble();
+        System.out.println("Masukkan Nilai UAS:");
+        uas = scanner.nextDouble();
 
-        nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian) /3;
+        nilaiAkhir = ((nilaiKuis * 0.20) + (nilaiTugas * 0.15) + ( uts * 0.35) + (uas * 0.30));
 
         System.out.println("Nama: "+ nama);
         System.out.println("NIM: "+ nim);
         System.out.println("Kelas: "+ kelas);
         System.out.println("Absen: "+ absen);
         System.out.println("Nilai Akhir: "+ nilaiAkhir);
-
+        
         
     }
 }
